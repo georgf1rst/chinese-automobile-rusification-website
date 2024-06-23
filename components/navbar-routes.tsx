@@ -20,7 +20,7 @@ const NavbarRoutes = () => {
                     <PhoneCall className="h-5 w-5"/>
                 </Button>
             </PopoverTrigger>
-            <PopoverContent>
+            <PopoverContent >
                 <div className=" grid gap-2">
                     <div className="space-y-2">
                         <p className="text-sm text-muted-foreground">
