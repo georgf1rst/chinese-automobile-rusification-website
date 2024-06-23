@@ -10,12 +10,12 @@ const mainPageRoutes = [
     {
         icon: ShoppingBag,
         label: "Товары",
-        href: "/about"
+        href: "/catalog"
     },
     {
         icon: Wrench,
         label: "Услуги",
-        href: "/about"
+        href: "/services"
     },
     {
         icon: Info,
@@ -25,7 +25,7 @@ const mainPageRoutes = [
     {
         icon: Handshake,
         label: "Сотрудничество",
-        href: "/about"
+        href: "/partnership"
     }
 ]
 
