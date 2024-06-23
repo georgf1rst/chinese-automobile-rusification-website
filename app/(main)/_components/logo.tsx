@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export const Logo = () => {
     return(
-        <h2 className="text-xl">ПЕГАСavto
-            <span className="text-red-700 text-xl">
-            A
-            </span>
+        <h2 className="text-xl flex gap-[1.5px]">
+            <span className="font-extrabold tracking-tight">ПЕГАС</span>
+            <span className="text-yellow-600/70 font-semibold">avto</span>
+            <span className="text-red-700 font-medium">A</span>
         </h2>
     )
 }
