@@ -1,11 +1,7 @@
-const Home = ({
-    children
-}: {
-    children: React.ReactNode
-}) => {
+const Home = () => {
     return ( 
         <div>
-            {children}
+            <p>main</p>
         </div>
      );
 }
