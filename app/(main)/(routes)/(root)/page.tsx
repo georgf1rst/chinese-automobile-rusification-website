@@ -13,8 +13,8 @@ const Home = () => {
             <Carousel className="">
                 <CarouselContent className="">
                     <CarouselItems imageSrc="/slider-images/Starline.jpeg" imageAlt="pic-1" classes="" btnHref="/catalog/signalisations/starline" itemTitle="StarLine — надежная защита вашего автомобиля." itemDescription="Установка Автосигнализаций."/>
-                    <CarouselItems imageSrc="/slider-images/ac-automobile.jpg" imageAlt="pic-1" classes="" btnHref="/catalog/signalisations/starline" itemTitle="Не дайте жаре помешать вашему комфорту!" itemDescription="Заправка и ремонт Автокондиционеров."/>
-                    <CarouselItems imageSrc="/slider-images/diagnostics.jpg" imageAlt="pic-1" classes="" btnHref="/catalog/signalisations/starline" itemTitle="Выявляем проблемы авто компьютерной диагностикой." itemDescription="Компьютерная диагностика авто."/>
+                    <CarouselItems imageSrc="/slider-images/ac-automobile.jpg" imageAlt="pic-1" classes="" btnHref="/services/auto-air-conditioning" itemTitle="Не дайте жаре помешать вашему комфорту!" itemDescription="Заправка и ремонт Автокондиционеров."/>
+                    <CarouselItems imageSrc="/slider-images/diagnostics.jpg" imageAlt="pic-1" classes="" btnHref="/services/computer-diagnostics" itemTitle="Выявляем проблемы авто компьютерной диагностикой." itemDescription="Компьютерная диагностика авто."/>
                 </CarouselContent>
             </Carousel>
         </div>
