@@ -10,11 +10,11 @@ const Home = () => {
     
     return ( 
         <div className="p-2 md:p-4 xl:p-6">
-            <Carousel>
-                <CarouselContent>
-                    <CarouselItems imageSrc="/slider-images/Starline.jpg" imageAlt="pic-1" classes="md:basis-1/2 xl:basis-1/3" btnHref="/catalog/signalisations/starline" />
-                    <CarouselItems imageSrc="/slider-images/Starline.jpg" imageAlt="pic-1" classes="md:basis-1/2 xl:basis-1/3" btnHref="/catalog/signalisations/starline"/>
-                    <CarouselItems imageSrc="/slider-images/Starline.jpg" imageAlt="pic-1" classes="md:basis-1/2 xl:basis-1/3" btnHref="/catalog/signalisations/starline"/>
+            <Carousel className="">
+                <CarouselContent className="">
+                    <CarouselItems imageSrc="/slider-images/Starline.jpeg" imageAlt="pic-1" classes="" btnHref="/catalog/signalisations/starline" itemTitle="StarLine — надежная защита вашего автомобиля." itemDescription="Установка Автосигнализаций."/>
+                    <CarouselItems imageSrc="/slider-images/ac-automobile.jpg" imageAlt="pic-1" classes="" btnHref="/catalog/signalisations/starline" itemTitle="Не дайте жаре помешать вашему комфорту!" itemDescription="Заправка и ремонт Автокондиционеров."/>
+                    <CarouselItems imageSrc="/slider-images/diagnostics.jpg" imageAlt="pic-1" classes="" btnHref="/catalog/signalisations/starline" itemTitle="Выявляем проблемы авто компьютерной диагностикой." itemDescription="Компьютерная диагностика авто."/>
                 </CarouselContent>
             </Carousel>
         </div>

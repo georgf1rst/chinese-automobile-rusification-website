@@ -5,19 +5,24 @@ import { CarouselItem } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 interface CarouselItemsProps {
     imageSrc: string;
     imageAlt: string;
-    classes: any;
+    classes?: any;
     btnHref: string;
+    itemTitle: string;
+    itemDescription?: string;
 }
 
 const CarouselItems = ({
     imageSrc,
     imageAlt,
     classes,
-    btnHref
+    btnHref,
+    itemTitle,
+    itemDescription,
 
 }: CarouselItemsProps) => {
 
@@ -27,15 +32,27 @@ const CarouselItems = ({
     }
 
     return ( 
-        <CarouselItem className={classes}>
-            <a onClick={onClick} className="cursor-pointer">
-                <div className="">
-                    <AspectRatio ratio={18 / 9} className="rounded-md shadow-md">
+        <CarouselItem className={cn("md:grid md:basis-1/2 xl:basis-1/3 h-full", classes)}>
+            <a onClick={onClick} className="cursor-pointer h-2/4">
+                <div>
+                    <AspectRatio ratio={15 / 9} className="rounded-md shadow-md">
                         <Image fill className="object-cover overflow-hidden rounded-xl shadow-md" src={imageSrc} alt={imageAlt}/>
                     </AspectRatio>
                 </div>
             </a>
-
+            <div className="flex-col justify-center items-center text-center h-1/4">
+                <h3 className="lg:text-xl md:text-lg text-lg font-normal text-slate-700">
+                    {itemTitle}
+                </h3>
+                {!!itemDescription ? <p className="text-muted-foreground text-sm">
+                    {itemDescription}
+                </p> : null}
+            </div>
+            <div className="justify-center mt-2 hidden md:flex ">
+                <Button variant="outline" onClick={onClick}>
+                    Подробнее
+                </Button>
+            </div>
         </CarouselItem>
      );
 }
