@@ -35,7 +35,7 @@ const CarouselItems = ({
         <CarouselItem className={cn("md:grid md:basis-1/2 xl:basis-1/3 h-full", classes)}>
             <a onClick={onClick} className="cursor-pointer h-2/4">
                 <div>
-                    <AspectRatio ratio={15 / 9} className="rounded-md shadow-md">
+                    <AspectRatio ratio={15 / 9} className="rounded-xl shadow-md">
                         <Image fill className="object-cover overflow-hidden rounded-xl shadow-md" src={imageSrc} alt={imageAlt}/>
                     </AspectRatio>
                 </div>
