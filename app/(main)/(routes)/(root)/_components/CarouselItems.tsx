@@ -40,18 +40,20 @@ const CarouselItems = ({
                     </AspectRatio>
                 </div>
             </a>
-            <div className="flex-col justify-center items-center text-center h-1/4">
-                <h3 className="lg:text-xl md:text-lg text-lg font-normal text-slate-700">
-                    {itemTitle}
-                </h3>
-                {!!itemDescription ? <p className="text-muted-foreground text-sm">
-                    {itemDescription}
-                </p> : null}
-            </div>
-            <div className="justify-center mt-2 hidden md:flex ">
-                <Button variant="outline" onClick={onClick}>
-                    Подробнее
-                </Button>
+            <div className="md:min-h-[125px] max-h-max flex flex-col justify-between">
+                <div className="flex-col justify-between items-center text-center">
+                    <h3 className="lg:text-xl md:text-lg text-lg font-normal text-slate-700">
+                        {itemTitle}
+                    </h3>
+                    {!!itemDescription ? <p className="text-muted-foreground text-sm">
+                        {itemDescription}
+                    </p> : null}
+                </div>
+                <div className="justify-center mt-2 hidden md:flex ">
+                    <Button variant="outline" onClick={onClick}>
+                        Подробнее
+                    </Button>
+                </div>
             </div>
         </CarouselItem>
      );
