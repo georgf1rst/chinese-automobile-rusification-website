@@ -12,11 +12,11 @@ const Navbar = () => {
 
             <MobileSidebar/>
             
-            <div className="py-28 justify-center md:hidden flex">
+            <div className="py-28 justify-center md:hidden flex ml-4">
                 <Logo />
             </div>
 
-            <div className="">
+            <div className="ml-auto">
                 <NavbarRoutes/>
             </div>
             

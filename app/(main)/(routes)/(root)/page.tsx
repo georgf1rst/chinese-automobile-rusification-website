@@ -1,6 +1,7 @@
 import { CheckSquare, Clock, Factory, Handshake, Laugh, MoveUpRight, Smile } from "lucide-react";
 import MainCarousel from "./_components/main-carousel";
 import InfoCard from "@/components/info-card";
+import { Carousel } from "@/components/ui/carousel";
 const Home = () => {
     
     return ( 
